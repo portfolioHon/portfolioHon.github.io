@@ -1,0 +1,284 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0;
+	margin: 0;
+	
+}
+body{
+	background-color:purple;
+	background-image: linear-gradient(to bottom left, purple,pink);
+    background-size: 100% 100%;
+}
+.nav{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top:0;
+}
+.nav h2{
+	padding: 14px 80px;
+	color: aliceblue;
+}
+.sidenav{
+	position: fixed;
+	top: 60px;
+}
+#mySidenav a {
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	text-align: right;
+	position: absolute;
+	width: 85px;
+    left:-30px;
+    padding: 10px 10px;
+    border-radius: 0 5px 5px 0;
+	transition: 0.3s;
+	color: black;
+	text-decoration: none;
+}
+#mySidenav a:hover{
+    left: 0;
+	color: white;
+}
+.home {
+    top: 0;
+    background-color: #a83e97;
+ 
+}
+.about {
+    top: 50px;
+    background-color: #b34c9c;
+
+}
+.skill {
+    top: 100px;
+    background-color: #d783b2;
+}
+.project {
+    top: 150px;
+   background-color: #d5a8c7;
+}
+.contact{
+	top:200px;
+	background-color: #fbd5dd;
+}
+.section1{
+	width: 100%;
+	height: 600px;
+}
+.textshadow {
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	padding-left:150px;
+	padding-top: 235px;
+	font-size: 60px;
+	color: #2c2c2c;
+	letter-spacing: .05em;
+	text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+	height: 100px;
+}
+.chuchay{
+	width: 50%;
+	margin-top: 50px;
+	padding-left: 150px;
+	float: left;
+}
+
+.chuchay p{
+	color: black; 
+	font-family: "Courier";
+	font-size: 50px;
+	margin: 10px 0 0 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 25em;
+	animation: type 4s steps(60, end); 
+}
+
+.chuchay p:nth-child(2){
+	animation: type2 4s steps(60, end);
+}
+@keyframes type{ 
+	from { width: 0; }
+} 
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 80; } 
+}
+.avt{
+	float: right;
+	margin-right: 80px;
+}
+.avt img{
+	position: absolute;
+	right: 60px;
+	top: 120px;
+    padding-left: 30px;
+    height: 400px;
+    padding: 10px;
+    width: 400px;
+	border-radius: 50%;
+    border: 2px solid #a1a1a1;
+    animation: zoom 4s forwards;
+}
+@keyframes zoom{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+	
+}
+.section2{
+	height: 600px;
+}
+.section2 img{
+	height: 350px;
+	width: 550px;
+	margin-right: 100px;
+}
+.content{
+	display: flex;
+	padding: 5% 10%;
+	font-family: "Courier";
+	font-size: 20px;
+}
+.section2 p{
+	padding-top: 30px;
+}
+
+marquee{
+	margin:0 10% 0 10%;
+}
+.chayngang{
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    color:black;
+    font-size: 80px;
+    letter-spacing: 5px;
+	margin-top:100px ;
+}
+.section3{
+	height: 700px;
+	
+}
+.section3 table{
+	margin: 0 20% 0 25%;
+	padding-top: 50px;
+	
+}
+.section3 table tr td{
+	padding-top: 30px;
+}
+ .checked {
+  color: pink;
+}
+.section4{
+	width: 100%;
+	height: 600px;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  float: left;
+  margin: 40px 0 0 10%;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back {
+  background-color:pink;
+  color: white;
+  transform: rotateY(180deg);
+}
+.section5{
+	width: 100%;
+	height: 800px;
+}
+.formCT{
+	
+	width: 80%;
+	height: 500px;
+	border-radius: 5px;
+	background-color: aliceblue;
+	margin:20px 10% 0 10% ;
+	display: flex;
+}
+.ctcenter{
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	margin: 30px 0 0 30px;
+}
+
+.ip{
+	
+	margin: 20px;
+	padding: 5px 0 5px 5px;
+	height: 20px;
+	width: 250px;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	background: #fae9fb;
+}
+.ip1{
+	margin: 20px;
+	padding: 5px 0 5px 5px;
+	height: 80px;
+	width: 250px;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	background: #fae9fb;
+}
+button{
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	margin: 0 0 10px 70%;
+	height: 35px;
+	width: 60px;
+	border: 1px;
+	border-radius: 5px;
+	background-color: #ba24c2;
+	color: white;
+}
+.ctw h5{
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	padding-top: 10px;
+}
+.ctw img{
+	width: 45px;
+	height: 45px;
+	float: left;
+	margin-left: 30px;
+}
+.footer {
+text-align: center;
+color: white;
+height: 50px;
+}
+
+
+
+
